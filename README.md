@@ -67,7 +67,9 @@ I am the only member whose work is built entirely around direct user input.
 ## 5. Artistic Inspirations
 
 ### Piet Mondrian – Composition
+
 ![alt text](<Piet Mondrian Composition.jpg>)
+
 I based my piece on Mondrian’s structured geometry:  
 vertical and horizontal lines dividing the canvas into coloured regions.
 
@@ -89,6 +91,7 @@ Two sources influenced the ink effect:
    I learned how jittered radial points can create soft organic boundaries.
 
 ![alt text](<Watercolor - spray paint example.png>)
+
 These influences helped create the grey ink blots that accumulate behind the crosses and colour blocks.
 
 ## 6. Technical Explanation
