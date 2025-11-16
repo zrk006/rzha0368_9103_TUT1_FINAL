@@ -4,8 +4,6 @@ IDEA9103 Creative Coding
 Roger(Ruikang) Zhang
 rzha0368
 
----
-
 ## 1. How to Interact With the Work
 
 This artwork is fully driven by user input. To experience the animation:
@@ -20,8 +18,6 @@ This artwork is fully driven by user input. To experience the animation:
 - The header text changes colour every time you click.
 
 The artwork evolves through continuous clicking, building a layered Mondrian-like composition.
-
----
 
 ## 2. My Individual Approach to Animating the Group Code
 
@@ -38,8 +34,6 @@ Changes I introduced:
 
 My animation focuses on giving users the power to construct the composition interactively.
 
----
-
 ## 3. Chosen Animation Driver: Interaction
 
 From the four allowed drivers (audio, interaction, Perlin noise, time),  
@@ -51,8 +45,6 @@ Reasoning:
   Interaction allows the user to become the “painter.”
 - Each click introduces a new geometric unit, reflecting Mondrian’s modular style.
 - Interaction enables real-time generative composition that cannot be achieved through timed or noise-based animation alone.
-
----
 
 ## 4. What I Animate and How This Differs From My Group Members
 
@@ -72,11 +64,10 @@ Other group members used completely different drivers:
 
 I am the only member whose work is built entirely around direct user input.
 
----
-
 ## 5. Artistic Inspirations
 
-### Piet Mondrian – Composition  
+### Piet Mondrian – Composition
+![alt text](<Piet Mondrian Composition.jpg>)
 I based my piece on Mondrian’s structured geometry:  
 vertical and horizontal lines dividing the canvas into coloured regions.
 
@@ -97,9 +88,8 @@ Two sources influenced the ink effect:
    https://editor.p5js.org/StevesMakerspace/sketches/e4rxSKgYE  
    I learned how jittered radial points can create soft organic boundaries.
 
+![alt text](<Watercolor - spray paint example.png>)
 These influences helped create the grey ink blots that accumulate behind the crosses and colour blocks.
-
----
 
 ## 6. Technical Explanation
 
@@ -142,8 +132,6 @@ Only p5.js is used, with animation based on:
 - arrays of objects storing state  
 - randomness (as taught in course Weeks 1–9)
 
----
-
 ## 7. Changes Made to Group Code
 
 My work differs from the group code in the following ways:
@@ -154,8 +142,6 @@ My work differs from the group code in the following ways:
 - Added the durability fading system.
 - Added quadrant placement logic.
 - Added independent ink layer rendering.
-
----
 
 ## 8. External Techniques and Attribution
 
@@ -169,12 +155,3 @@ Two external references influenced the watercolor effect:
 
 I rewrote both methods in simplified form and included comments in the code referencing these sources.
 
----
-
-## 9. Run the Work
-
-GitHub Pages link:  
-(Insert your link)
-
-Repository link:  
-(Insert your link)
