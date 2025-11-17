@@ -56,13 +56,7 @@ My animated properties include:
 - Permanent watercolor ink strokes drawn behind everything.
 - Header text that changes colour with interaction.
 
-Other group members used completely different drivers:
-
-- One used Perlin noise to distort curves.
-- One used time-based animation to pulse colours.
-- One used audio-reactive behaviour for shape vibration.
-
-I am the only member whose work is built entirely around direct user input.
+I am the only member whose work is built in this way.
 
 ## 5. Artistic Inspirations
 

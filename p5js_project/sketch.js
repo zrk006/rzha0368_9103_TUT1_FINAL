@@ -141,15 +141,17 @@ function drawCross(ev, t, progress, lifeFactor) {
   rect(cx - t / 2, cy, t, downLen);
 }
 
-// LocalRect
+// Rectangle
 function makeLocalRect(cx, cy, leftLen, rightLen, upLen, downLen) {
   const t = bandThickness();
   const quad = random(["tl", "tr", "bl", "br"]);
+  // top-left, top-right, bottom-left, bottom-right
 
   const wLeft  = leftLen  - t / 2;
   const wRight = rightLen - t / 2;
   const hUp    = upLen    - t / 2;
   const hDown  = downLen  - t / 2;
+  // Available width/height inside each quadrant (line thickness subtracted)
 
   let x, y, w, h;
 
@@ -168,6 +170,7 @@ function makeLocalRect(cx, cy, leftLen, rightLen, upLen, downLen) {
   }
 
   if (w <= 2 || h <= 2) return null;
+  // If this quadrant has no space (too small), skip creating a rectangle
 
   const col = random([
     color(...COL_Y),
@@ -178,7 +181,7 @@ function makeLocalRect(cx, cy, leftLen, rightLen, upLen, downLen) {
   return { x, y, w, h, col };
 }
 
-// RectAnim
+// RectAnimation
 function drawRectAnimated(rectObj, progress, lifeFactor) {
   if (!rectObj) return;
   const col = rectObj.col;
@@ -189,14 +192,18 @@ function drawRectAnimated(rectObj, progress, lifeFactor) {
   rect(rectObj.x, rectObj.y, rectObj.w, rectObj.h);
 }
 
-// Ink
+// Ink – background watercolor-inspired effect
 function drawInk(cx, cy) {
+  // This ink / spray effect is adapted and simplified from a spray painting technique by Steve's Makerspace:
+  // https://editor.p5js.org/StevesMakerspace/sketches/e4rxSKgYE
+  // I rewrote it to use grey tones and larger soft blobs for an ink / wash look.
   inkLayer.push();
   inkLayer.translate(cx, cy);
   inkLayer.noStroke();
 
   const baseGray = random(80, 150);
 
+  // Draw several overlapping blot shapes with slightly different orientation and tone
   for (let k = 0; k < 4; k++) {
     inkLayer.push();
     inkLayer.rotate(random(TWO_PI));
@@ -208,6 +215,7 @@ function drawInk(cx, cy) {
     );
     inkLayer.beginShape();
     for (let a = 0; a < TWO_PI; a += 0.4) {
+      // Jittered radius to make edges irregular (spray / watercolor feel)
       const r = random(90, 200);
       const x = cos(a) * r;
       const y = sin(a) * r;
